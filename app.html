@@ -1,0 +1,13 @@
+<body>
+  <button>Remove Head</button>
+
+  {{#each children}}
+    {{> child }}
+  {{/each }}
+</body>
+
+<template name="child">
+  {{addOnDestroyed}}
+  {{name}}
+</template>
+
